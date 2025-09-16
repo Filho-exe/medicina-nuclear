@@ -1,0 +1,71 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .main {
+      display: flex;
+      gap: 20px;
+    }
+
+    .table-main {
+      width: 30%;
+    }
+
+    .charts-main {
+      width: 70%;
+    }
+
+    .charts-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .chart-box {
+      width: 48%;
+    }
+
+    .chart-center {
+      width: 60%;
+      margin: 30px auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ccc;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: center;
+      font-size: small;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .DivbtnProtocol{
+      display: flex;
+      position: relative;
+      float: right;
+      min-height: 3%;
+    }
+
+    button.btnProtocol {
+      border-radius: 5px;
+      border: 0;
+      background: linear-gradient(90deg, #fdfdfd , #e5e5e5);
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(92, 33, 187, 0.18);
+    }

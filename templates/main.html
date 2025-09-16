@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medicina Nuclear — Protocolo</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" href="/static/img/ufg_favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="/static/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <section class="card">
+      <header class="brand">
+
+        <div>
+          <h1>Protocolo medicina nuclear</h1>
+          <p class="lead">Insira os valores e será retornado os protocolos.</p>
+        </div>
+      </header>
+
+      <form action="/search" id="mainForm" method="POST">
+        <div class="grid">
+          <div class="field">
+            <input id="radiofarmaco" name="radiofarmaco" list="lista-radiofarmacos" placeholder=" " required />
+            <label for="radiofarmaco" class="floating">Radioisótopo</label>
+            <datalist id="lista-radiofarmacos">
+              <option value="Tecnécio-99m">
+              <option value="Iodo-131">
+              <option value="Rubídio-82">
+            </datalist>
+          </div>
+
+          <div class="field">
+            <input id="atividade" name="atividade" type="number" placeholder=" " required />
+            <label for="atividade" class="floating">Atividade da fonte [mCi]</label>
+          </div>
+
+          <div class="field">
+            <input id="volume" name="volume" type="number" placeholder=" " required />
+            <label for="volume" class="floating">Volume do frasco [mL]</label>
+          </div>
+
+          <div class="field">
+            <input id="data" name="data" type="time" value="00:00" placeholder="" required />
+            <label for="data" class="floating">Hora da coleta [hh:mm]</label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="submit" type="submit" class="btn">Calcular</button>
+          <button type="button" id="limpar" class="ghost">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+  <div id="info" class="preview" style="display: flex; margin-left: -100px; opacity: 0%;">
+    <div class="kv">
+      <h1 id="radioisotopo" style="text-align: center; width: 100%;"></h1>
+    </div>
+    <div class="kv"><span style="font-weight: bold;">Tempo de meia vida (t<sub>1/2</sub>):</span><span
+        id="meia-vida"></span></div>
+    <div class="kv"><span style="font-weight: bold;">Massa do isótopo:</span><span id="massa"></span></div>
+    <div class="kv"><span style="font-weight: bold;">Tipos de decaimento</span><span id="decaimento"></span></div>
+    <div class="kv"><span style="font-weight: bold;">Eliminação:</span><span id="eliminacao"></span></div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

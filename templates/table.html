@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Medicina nuclear - Protocolo</title>
+  <link rel="icon" href="/static/img/ufg_favicon.png">
+  <link rel="stylesheet" href="/static/css/table.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <h3 style="text-align: center;">Protocolo utilizando {{_element}}</h3>
+
+  <div class="main">
+    <div class="table-main">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Horário</th>
+            <th>Protocolo [mCi]</th>
+            <th>Volume Eluído [mL]</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="charts-main">
+      <div class="charts-top">
+        <div class="chart-box">
+          <canvas id="chart1"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="chart2"></canvas>
+        </div>
+      </div>
+      <div class="chart-center">
+        <canvas id="chart3"></canvas>
+      </div>
+      <div class="DivbtnProtocol">
+        <button id="newsearch" type="button" class="btnProtocol">Novo cálculo</button>
+      </div>
+    </div>
+    
+  <script>
+  document.getElementById('newsearch').addEventListener('click', () =>{
+    window.location.replace('/')
+  })
+  const jsonData = {{ json_final | tojson}};
+  const volumeInicial = {{ _volumeInicial }};
+  </script>
+  <script src="/static/js/table.js"></script>
+</body>
+
+</html>

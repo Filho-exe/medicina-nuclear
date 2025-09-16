@@ -1,0 +1,189 @@
+:root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #94a3b8;
+      --accent: #7c3aed;
+      --glass: rgba(255, 255, 255, 0.04);
+      --success: #10b981;
+      --danger: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #071025 0%, #051029 60%);
+      color: #e6eef8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      transition: all 2s ease-in-out;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 920px;
+      display: flex;
+      justify-content: center;
+      transform: translateX(100px);
+      transition: all 0.5s;
+    }
+
+    .container.return {
+      transform: translateX(0px);
+    }
+
+    .container.out {
+      transition: translateX(-200px);
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(2, 6, 23, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    header.brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), #4f46e5);
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.18);
+      font-weight: 700;
+      color: white;
+      font-size: 18px
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 18px
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin: 6px 0 18px;
+      font-size: 13px
+    }
+
+    form .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .field {
+      position: relative;
+      padding-bottom: 2%;
+      gap: 10px;
+    }
+
+    label.floating {
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      transform-origin: left top;
+      font-size: 12px;
+      color: var(--muted);
+      transition: all .18s ease;
+      pointer-events: none;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 18px 12px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.01));
+      color: inherit;
+      font-size: 14px;
+      outline: none;
+      backdrop-filter: blur(4px);
+    }
+
+    input:focus,
+    select:focus {
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.12);
+      border-color: rgba(124, 58, 237, 0.35)
+    }
+
+    input:focus+label.floating,
+    input:not(:placeholder-shown)+label.floating {
+      transform: translateY(-20px) scale(.9);
+      top: 6px;
+      color: var(--accent)
+    }
+
+    .preview {
+      padding: 22px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.008));
+      border: 1px solid rgba(255, 255, 255, 0.02);
+      min-height: 200px;
+      min-width: 350px;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+      transition: all 0.5s;
+    }
+
+    .preview.esquerda {
+      transform: translateX(-100px);
+    }
+
+    .container.out {
+      transform: translateX(-800px);
+    }
+
+    .kv {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+      padding: 10px;
+      background: var(--glass);
+      font-size: 14px
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 16px
+    }
+
+    button.btn {
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 0;
+      background: linear-gradient(90deg, var(--accent), #5b21b6);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(92, 33, 187, 0.18);
+    }
+
+    button.ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted)
+    }
