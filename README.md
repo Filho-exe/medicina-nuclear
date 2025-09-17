@@ -111,7 +111,7 @@ http://127.0.0.1:5000
 ## 📷 Screenshot
 
 > ![GIF 01](screenshots/gif01.gif)
-> ![Photo 01](screenshots/photo01.png)
+> ![Photo 01](screenshots/Photo01.png)
 > ![Photo 02](screenshots/Photo02.png)
 ---
 
