@@ -102,7 +102,7 @@ http://127.0.0.1:5000
 
 3. O sistema irá gerar a tabela mostrando a disponibilidade do radiofármaco ao longo do dia.
 
-4. Caso desejar, a aplicação está hospedada em https://medicinanuclear.squareweb.app até o dia 16/09/2025.
+4. Caso desejar, a aplicação está hospedada em https://medicinanuclear.squareweb.app até o dia 17/10/2025.
 
 ---
 

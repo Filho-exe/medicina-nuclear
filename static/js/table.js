@@ -6,7 +6,10 @@ for (const [hora, lista] of Object.entries(jsonData)) {
   const tr = document.createElement("tr");
   const volume = item.volume_eluido
   //console.log(volume)
-  tr.innerHTML = `<td>${hora}</td><td>${item.protocolo}</td><td>${volume}</td>`;
+  console.log(item.status)
+  if (item.status == false) tr.innerHTML = `<td>${hora}</td><td>${item.protocolo}</td><td style="color: red;" >${volume}</td>`;
+  else tr.innerHTML = `<td>${hora}</td><td>${item.protocolo}</td><td>${volume}</td>`;
+  
   tbody.appendChild(tr);
 }
 

@@ -94,7 +94,7 @@ def search():
                 'atividade':a*volume,
                 'volume_eluido':Ve,
                 'volume_final':volume - sum(volume_eluido),
-                'Status': True
+                'status': True
             }]
         elif volume - sum(volume_eluido) <= 0:
                 json_final[horario[i]]=[{

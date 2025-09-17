@@ -57,7 +57,7 @@ body {
       display: flex;
       position: relative;
       float: right;
-      min-height: 3%;
+      min-height: 4%;
     }
 
     button.btnProtocol {
