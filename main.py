@@ -53,7 +53,7 @@ def table():
     print('table')
     return render_template('table.html')
 
-#===- Rota de acesso onde é feito todo o protocolo -===#
+#===- Rota de acesso onde é feito todo a simulação -===#
 @app.route('/search', methods=['GET','POST'])
 def search():
 #==- Definição de tabelas de dict/json para armazenar os dados ===-#
