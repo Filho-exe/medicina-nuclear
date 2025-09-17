@@ -63,14 +63,16 @@ http://127.0.0.1:5000
 
 ## 📊 Funcionalidades
 
-- Cálculo da atividade inicial corrigida pelo tempo até cada protocolo.
+- Cálculo da atividade do radioisótopo corrigida pelo tempo até cada protocolo.
 - Geração automática de protocolos aleatórios.
 - Exibição de tabela com:
   - Horários de coleta (08:00 até 18:30, intervalos de 30 min)
-  - Atividade em cada instante
-  - Volume necessário
-  - Volume final disponível
-  - Relação demanda e oferta
+  - Protocolos [mCi]
+  - Volume necessário [mL]
+- Exibição dos gráficos com:
+  - Volume no frasco de coleta durante o horário de coleta
+  - Relação entre demanda e oferta do radioisótopo
+  - Decaimento do radioisótopo
 
 ---
 
@@ -100,7 +102,7 @@ http://127.0.0.1:5000
 
 2. Clique em **Calcular**.
 
-3. O sistema irá gerar a tabela mostrando a disponibilidade do radiofármaco ao longo do dia.
+3. O sistema irá gerar a tabela mostrando a disponibilidade do radiofármaco ao longo do dia junto aos gráficos.
 
 4. Caso desejar, a aplicação está hospedada em https://medicinanuclear.squareweb.app até o dia 17/10/2025.
 
@@ -108,9 +110,9 @@ http://127.0.0.1:5000
 
 ## 📷 Screenshot
 
-> ![Logo UFG](screenshots/gif01.gif)
-> ![Logo UFG](screenshots/photo01.png)
-> ![Logo UFG](screenshots/photo02.png)
+> ![GIF 01](screenshots/gif01.gif)
+> ![Photo 01](screenshots/photo01.png)
+> ![Photo 02](screenshots/Photo02.png)
 ---
 
 ## 🛠️ Tecnologias Utilizadas

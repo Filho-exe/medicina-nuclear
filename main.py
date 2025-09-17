@@ -82,7 +82,7 @@ def search():
                 'protocolo':b,
                 'atividade':a*volume,
                 'volume_eluido':'Nao avaliado',
-                'volume_final':volume - sum(volume_eluido),
+                'volume_final':round(volume - sum(volume_eluido),1),
                 'status':False
             }]
 
@@ -93,7 +93,7 @@ def search():
                 'protocolo':b,
                 'atividade':a*volume,
                 'volume_eluido':Ve,
-                'volume_final':volume - sum(volume_eluido),
+                'volume_final':round(volume - sum(volume_eluido),1),
                 'status': True
             }]
         elif volume - sum(volume_eluido) <= 0:

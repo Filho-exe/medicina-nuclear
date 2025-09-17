@@ -6,8 +6,8 @@ for (const [hora, lista] of Object.entries(jsonData)) {
   const tr = document.createElement("tr");
   const volume = item.volume_eluido
   //console.log(volume)
-  console.log(item.status)
-  if (item.status == false) tr.innerHTML = `<td>${hora}</td><td>${item.protocolo}</td><td style="color: red;" >${volume}</td>`;
+  //console.log(item.status)
+  if (item.status == false) tr.innerHTML = `<td>${hora}</td><td>${item.protocolo}</td><td style="color: red;" >Indisponível</td>`;
   else tr.innerHTML = `<td>${hora}</td><td>${item.protocolo}</td><td>${volume}</td>`;
   
   tbody.appendChild(tr);
@@ -26,13 +26,13 @@ protocolos.forEach(protocolo => {
 const atividade = labels.map(at => jsonData[at][0].atividade);
 let volumeFinal = [];
 volumeFinal.push(volumeInicial);
-console.log(volumeFinal)
+//console.log(volumeFinal)
 volumes.forEach(volume => {
   if (volume === 'Nao avaliado') volumeFinal.push(Math.round(volumeFinal.at(-1)))
   else volumeFinal.push(Math.round(volumeFinal.at(-1) - volume))
 
 });
-console.log(volumeFinal)
+//console.log(volumeFinal)
 new Chart(document.getElementById('chart1'), {
   type: 'line',
   data: {
