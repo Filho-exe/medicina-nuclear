@@ -1,7 +1,7 @@
 # 💊 Simulador de Protocolos radiofármacos - medicina nuclear
 
 Aplicação web desenvolvida em **Flask** para simulação de protocolos de uso de radioisótopos
-(Tecnécio-99m, Iodo-131 e Rubídio-82).  
+(Tecnécio-99m, Flúor-18 e Rubídio-82).  
 O sistema calcula a atividade corrigida pela meia-vida, gera protocolos aleatórios e exibe os resultados em uma tabela de horários que
 se iniciam às 08:00 até às 18:00 com pausa entre 12:00 e 13:00.
 
@@ -79,7 +79,7 @@ http://127.0.0.1:5000
 ## 🧪 Radioisótopos Suportados
 
 - **Tecnécio-99m** → meia-vida: 6h (360 min)
-- **Iodo-131** → meia-vida: 8 dias (11520 min)
+- **Flúor-18** → meia-vida: 110 min
 - **Rubídio-82** → meia-vida: 1,25 min
 
 ---

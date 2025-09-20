@@ -32,7 +32,7 @@ input.addEventListener('input', function () {
     if (this.value === "Tecnécio-99m") {
         //console.log('Tecnecio99m');
         document.getElementById("radioisotopo").innerHTML = "<sup>99m</sup>Tc -> Tecnécio-99m ";
-        document.getElementById("meia-vida").textContent = "6,006h"
+        document.getElementById("meia-vida").textContent = "6,006 horas"
         document.getElementById("massa").textContent = "98.9063 u"
         document.getElementById("decaimento").textContent = "(γ)"
         document.getElementById("eliminacao").textContent = "Urinário"
@@ -41,23 +41,23 @@ input.addEventListener('input', function () {
         container.classList.add("return")
 
     } else {
-        if (this.value === "Iodo-131") {
-            console.log("Iodo")
-            document.getElementById("radioisotopo").innerHTML = "<sup>131</sup>I -> Iodo 131";
-            document.getElementById("meia-vida").textContent = "8 dias"
-            document.getElementById("massa").textContent = "130,9061 u"
-            document.getElementById("decaimento").textContent = "(β⁻,γ)"
+        if (this.value === "Flúor-18") {
+            //console.log("Fluor")
+            document.getElementById("radioisotopo").innerHTML = "<sup>18</sup>F -> Flúor 18";
+            document.getElementById("meia-vida").textContent = "110 minutos"
+            document.getElementById("massa").textContent = "18,000938 u"
+            document.getElementById("decaimento").textContent = "(β⁺,CE)"
             document.getElementById("eliminacao").textContent = "Urinário"
             info.style.opacity = "100%";
             div.classList.add("esquerda")
             container.classList.add("return")
         } else {
             if (this.value === "Rubídio-82") {
-                console.log('Rubio-82')
+                //console.log('Rubio-82')
                 document.getElementById("radioisotopo").innerHTML = "<sup>82</sup>Rb -> Rubídio 82 ";
                 document.getElementById("meia-vida").textContent = "75 segundos"
                 document.getElementById("massa").textContent = "81,9182 u"
-                document.getElementById("decaimento").textContent = "(β⁻,C.E)"
+                document.getElementById("decaimento").textContent = "(β⁺,C.E)"
                 document.getElementById("eliminacao").textContent = "Não se acumula"
                 info.style.opacity = "100%";
                 div.classList.add("esquerda")

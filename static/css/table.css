@@ -1,6 +1,7 @@
 body {
       font-family: Arial, sans-serif;
       margin: 20px;
+      transition: all 2s ease-in-out;
     }
 
     .main {
@@ -28,7 +29,11 @@ body {
 
     .chart-center {
       width: 60%;
-      margin: 30px auto;
+      margin: 30px ;
+      display: flex;
+      justify-content: space-between;
+      gap: 20%;
+      
     }
 
     table {
@@ -68,4 +73,23 @@ body {
       font-weight: 600;
       cursor: pointer;
       box-shadow: 0 8px 28px rgba(92, 33, 187, 0.18);
+    }
+
+    button.otimizar{
+      border-radius: 5px;
+      border: 0;
+      background: linear-gradient(90deg, #f3f7f4 , #d8f0d8);
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(92, 33, 187, 0.18);
+      float: right;
+      margin: 5px;
+    }
+
+    .otimizado {
+      color: green;
+      float: right;
+      display: none;
+      margin-top: 7px;
     }
